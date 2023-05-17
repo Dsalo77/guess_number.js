@@ -10,10 +10,16 @@ const readline = require('readline').createInterface({
     readline.close();
 
         if (answer == number){
-            console.log("you are a winner!!!!!!!!!!!!")
+            console.log("YOU WIN!!!!!!!!!!!!")
         
         }
+        else if (number > answer){
+            console.log("You guessed to high!! You lose!!!!!!")
+        }
+        else if (number < answer){
+            console.log("You guessed to low!! You lose!!!!!!")
+        }
         else{
-            console.log("you lose!! please try again.")
+            console.log("Not a number!!! You lose!!!!!!!!!!!!!!!")
         }
   });
